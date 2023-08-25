@@ -5,7 +5,9 @@ title: Home
 description: desc
 hero:
   cta:
-    blank: false
+    blank: true
+    text: Prendre rendez-vous
+    url: https://www.maiia.com/psychologue/33200-bordeaux/bourgeois-rachel
   cta_second:
     blank: false
   align: start
@@ -23,11 +25,13 @@ blocks:
     heading:
       title: Prendre rendez-vous
   - type: paragraph
-    grid: large
+    grid: small
     offset: start
     align: start
     cta:
       blank: false
+      text: ""
+      url: ""
     background: false
     title: Présentation
     text: >-
@@ -164,14 +168,14 @@ blocks:
           blank: false
         text: Pour les adultes souhaitant prendre le temps de souffler et de se
           détendre, après le travail Initiation à la relaxation et à la
-          méditation, tous les 15 jours  Séance d'essai gratuite.
+          méditation, tous les 15 jours. Séance d'essai gratuite.
         title: Relaxation, méditation
         icon: emoji-smile
       - cta:
           blank: false
         text: Consultations à médiation artistique, dessin, peinture, collage,
-          photo-montage. Séance d'une heure, expression libre, puis
-          analyse  Matériel fourni.
+          photo-montage. Séance d'une heure, expression libre, puis analyse.
+          Matériel fourni.
         title: Art-thérapie
         icon: brush
       - cta:
