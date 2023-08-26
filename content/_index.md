@@ -19,8 +19,8 @@ blocks:
   - type: cta
     cta:
       blank: true
-      text: Directement sur Maiia.com
-      url: https://www.maiia.com/psychologue/33200-bordeaux/bourgeois-rachel
+      text: Directement sur google
+      url: https://calendar.google.com/calendar/u/0/appointments/schedules/AcZssZ3-2JBqZLn6iZbngk0BgNxVhBftQQ75Ev8nnwz8kFxn5cbD3jDhdYcdO5aKnbkpJlMg7BoEiert
     background: true
     heading:
       title: Prendre rendez-vous
