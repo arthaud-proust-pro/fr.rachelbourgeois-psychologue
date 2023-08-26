@@ -1,3 +1,5 @@
+github.com/arthaud-proust-pro/hugolify-theme-services v0.0.0-20230825181413-4efea7301666 h1:Wlq0iB6XUz0TYfOqbpRPp6Ojq+67gup2FJwG8lwMGqw=
+github.com/arthaud-proust-pro/hugolify-theme-services v0.0.0-20230825181413-4efea7301666/go.mod h1:Zj0k66yFFW4NYTCm9Shj+d+AwyeCJd1mXh0i5HLjWgY=
 github.com/gohugoio/hugo-mod-jslibs-dist/popperjs/v2 v2.21100.20000 h1:GZxx4Hc+yb0/t3/rau1j8XlAxLE4CyXns2fqQbyqWfs=
 github.com/gohugoio/hugo-mod-jslibs-dist/popperjs/v2 v2.21100.20000/go.mod h1:mFberT6ZtcchrsDtfvJM7aAH2bDKLdOnruUHl0hlapI=
 github.com/hugolify/hugolify-example-site v1.0.13 h1:h9JAAugom9o04/bk4GWxDv9i+Zi7JoppfCZDZv+GDjY=

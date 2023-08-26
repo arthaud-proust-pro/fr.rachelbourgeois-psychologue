@@ -3,6 +3,7 @@ module github.com/hugolify/hugolify-template
 go 1.19
 
 require (
+	github.com/arthaud-proust-pro/hugolify-theme-services v0.0.0-20230825181413-4efea7301666 // indirect
 	github.com/gohugoio/hugo-mod-jslibs-dist/popperjs/v2 v2.21100.20000 // indirect
 	github.com/hugolify/hugolify-example-site v1.0.13 // indirect
 	github.com/hugolify/hugolify-netlify-cms v1.2.7 // indirect

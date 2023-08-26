@@ -1,4 +1,39 @@
 links:
   - blank: false
+    title: Consultations
+    url: /services
+    links:
+      - blank: false
+        title: Enfant
+        url: /services/consultation-enfant
+      - blank: false
+        title: Adolescent
+        url: /services/consultation-adolescent
+      - blank: false
+        title: Adulte et senior
+        url: /services/consultation-adulte-et-senior
+      - blank: false
+        url: /services/consultation-couple
+        title: Couple
+  - blank: false
+    title: Ateliers
+    url: /services
+    links:
+      - blank: false
+        title: Art-thérapie
+        url: /services/atelier-art-therapie
+      - blank: false
+        title: Psy et plume
+        url: /services/atelier-psy-et-plume
+      - blank: false
+        title: Relaxation et méditation
+        url: /services/atelier-relaxation-et-meditation
+      - blank: false
+        title: Hypnose
+        url: /services/atelier-hypnose
+  - blank: false
     title: Le cabinet
     url: /le-cabinet
+  - blank: false
+    title: À propos
+    url: /a-propos
