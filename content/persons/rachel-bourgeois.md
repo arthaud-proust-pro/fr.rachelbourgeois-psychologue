@@ -2,7 +2,8 @@
 isIndex: false
 draft: false
 title: Rachel Bourgeois
-description: Psychologue à Bordeaux Caudéran depuis plus de 5 ans
+description: Psychologue à Bordeaux Caudéran depuis plus de 10 ans, j'ai
+  accompagné plus de 450 patients
 image:
   src: /images/uploads/4a296cc3-8626-417c-9d62-06922f2d9c47-photo-rachel-bourgeois-thumbnail.png
 contact:

@@ -53,6 +53,7 @@ blocks:
       - consultation-adolescent
       - consultation-adulte-et-senior
       - consultation-couple
+      - consultation-hypnose
   - type: selected-services
     section: services
     show_more: false
@@ -64,7 +65,6 @@ blocks:
       - atelier-psy-et-plume
       - atelier-relaxation-et-meditation
       - atelier-art-therapie
-      - atelier-hypnose
   - type: cta
     cta:
       blank: true

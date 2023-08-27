@@ -15,6 +15,9 @@ links:
       - blank: false
         url: /services/consultation-couple
         title: Couple
+      - blank: false
+        title: Hypnose
+        url: /services/consultation-hypnose
   - blank: false
     title: Ateliers
     url: /services
@@ -28,9 +31,6 @@ links:
       - blank: false
         title: Relaxation et méditation
         url: /services/atelier-relaxation-et-meditation
-      - blank: false
-        title: Hypnose
-        url: /services/atelier-hypnose
   - blank: false
     title: Le cabinet
     url: /le-cabinet
