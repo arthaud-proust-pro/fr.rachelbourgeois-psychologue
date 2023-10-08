@@ -1,7 +1,7 @@
 links:
   - blank: false
     title: Consultations
-    url: /services
+    url: /services/categories/consultation/
     links:
       - blank: false
         title: Enfant
@@ -20,7 +20,7 @@ links:
         url: /services/consultation-hypnose
   - blank: false
     title: Ateliers
-    url: /services
+    url: /services/categories/atelier/
     links:
       - blank: false
         title: Art-thérapie
