@@ -24,6 +24,9 @@ blocks:
     background: true
     heading:
       title: Prendre rendez-vous
+    cta_second:
+      text: Ou en me contactant
+      url: /rachel-bourgeois/
   - type: paragraph
     grid: small
     offset: start
@@ -73,6 +76,9 @@ blocks:
     background: true
     heading:
       title: Prendre rendez-vous
+    cta_second:
+      url: /rachel-bourgeois/
+      text: Ou en me contactant
   - type: selected-persons
     section: persons
     show_more: false
@@ -82,4 +88,9 @@ blocks:
       title: Contact
     items:
       - rachel-bourgeois
+  - type: latest
+    count: 3
+    show_more: true
+    background: false
+    section: casestudies
 ---
