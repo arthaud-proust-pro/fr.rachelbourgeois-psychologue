@@ -88,9 +88,4 @@ blocks:
       title: Contact
     items:
       - rachel-bourgeois
-  - type: latest
-    count: 3
-    show_more: true
-    background: false
-    section: casestudies
 ---
