@@ -6,6 +6,13 @@ description: Consultations à médiation artistique, dessin, peinture, collage,
   photo-montage. Séance d'une heure, expression libre, puis analyse. Matériel
   fourni.
 services_categories: Atelier
+items:
+  - rachel-bourgeois
+google_calendar_scheduling: https://calendar.google.com/calendar/u/0/appointments/schedules/AcZssZ0buA4vLBuh3z8ffnQk31-WqAd3ZuauXTH6RNwgp6Dp8Xlo2HoMAPVv6HhJ_gS0fEIBwC1cDp2Z
+cta:
+  text: Me contacter
+  url: /rachel-bourgeois/
+  blank: true
 price_per_unit:
   price: 50
   per: séance
