@@ -1,4 +1,5 @@
 imports:
+  - path: github.com/hugolify/hugolify-theme-services-persons
   - path: github.com/hugolify/hugolify-theme-services-categories
   - path: github.com/hugolify/hugolify-theme-services
   - path: github.com/hugolify/hugolify-theme-posts-authors

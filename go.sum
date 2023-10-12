@@ -26,5 +26,7 @@ github.com/hugolify/hugolify-theme-publications-categories v1.0.3 h1:NM+pvbb5hea
 github.com/hugolify/hugolify-theme-publications-categories v1.0.3/go.mod h1:NX1zBK520EcoOqDbtg3EifmDxxhWZvrpQopo4QoeN5o=
 github.com/hugolify/hugolify-theme-publications-concerned v1.0.11 h1:6zOVAvE7cl+D8FD/UtUI8bRewypqHoTg6u3iIPr9Ros=
 github.com/hugolify/hugolify-theme-publications-concerned v1.0.11/go.mod h1:SAxYCXVsDJ5lUHU/YRrTIVWATehPwdy9a1VHhmUP5dw=
+github.com/hugolify/hugolify-theme-services-persons v0.0.0-20231011201841-b049ddb7423e h1:Cf2VQIFYHPoeLSfg+Kww/Nq8Achp9jdKEVPNhmfMIfI=
+github.com/hugolify/hugolify-theme-services-persons v0.0.0-20231011201841-b049ddb7423e/go.mod h1:eY1UFteKdxHcXtebhr9h/repBjkan5gF7xfFBZ14uQc=
 github.com/twbs/bootstrap v5.3.0+incompatible h1:4+staADO0OrqUv77m+XL+vHYojLH9oxb4Vxi9mnIJWg=
 github.com/twbs/bootstrap v5.3.0+incompatible/go.mod h1:fZTSrkpSf0/HkL0IIJzvVspTt1r9zuf7XlZau8kpcY0=
