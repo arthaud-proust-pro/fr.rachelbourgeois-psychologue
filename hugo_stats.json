@@ -64,6 +64,7 @@
       "container",
       "content",
       "content-body",
+      "credit",
       "cta",
       "description",
       "disabled",
@@ -102,6 +103,7 @@
       "list",
       "list-services_categories",
       "logo",
+      "main-menu",
       "map",
       "media",
       "media-icon",
@@ -119,6 +121,7 @@
       "person",
       "persons",
       "phone",
+      "preload",
       "previous",
       "row",
       "section-a-propos",
@@ -153,6 +156,7 @@
       "text",
       "title",
       "toc",
+      "top",
       "visually-hidden"
     ],
     "ids": [

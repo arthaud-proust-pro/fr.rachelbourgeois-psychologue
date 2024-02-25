@@ -1,5 +1,5 @@
 replacements:
-  - github.com/hugolify/hugolify-netlify-cms -> /Users/arthaud/dev/hugolify/hugolify-netlify-cms
-  - github.com/hugolify/hugolify-theme -> /Users/arthaud/dev/hugolify/hugolify-theme
-  - github.com/hugolify/hugolify-theme-services -> /Users/arthaud/dev/hugolify/hugolify-theme-services
-  - github.com/hugolify/hugolify-theme-services-categories -> /Users/arthaud/dev/hugolify/hugolify-theme-services-categories
+  # - github.com/hugolify/hugolify-decap-cms -> /Users/arthaud/dev/hugolify/hugolify-decap-cms
+  # - github.com/hugolify/hugolify-theme -> /Users/arthaud/dev/hugolify/hugolify-theme
+  # - github.com/hugolify/hugolify-theme-services -> /Users/arthaud/dev/hugolify/hugolify-theme-services
+  # - github.com/hugolify/hugolify-theme-services-categories -> /Users/arthaud/dev/hugolify/hugolify-theme-services-categories
