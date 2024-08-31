@@ -1,5 +1,5 @@
 languageCode: 'fr'
-baseURL: https://rachelbourgeois-psychologue.fr
+baseURL: https://rachelbourgeois-psychologue.netlify.app
 removePathAccents: true
 
 taxonomies:
