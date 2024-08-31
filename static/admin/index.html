@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Admin</title>
+    <!-- Include the script that enables Netlify Identity on this page. -->
+    <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+
+     <link rel="stylesheet" href="app.css" />
+</head>
+<body>
+<!-- Include the script that builds the page and powers Netlify CMS -->
+<script src="https://unpkg.com/decap-cms@^3.0.0/dist/decap-cms.js"></script>
+<script src="https://unpkg.com/decap-cms@^3.0.0/dist/decap-cms-widget-boolean.js"></script>
+<script>
+
+const boolean = CMS.getWidget('boolean')
+const ROOT_STRING = '/'
+CMS.registerWidget(
+  'principalCabinet', 
+  createClass({
+    handleChange: function(checked) {
+      this.props.onChange(checked ? ROOT_STRING : null);
+    },
+
+    render: function() {
+      const isChecked = this.props.value === ROOT_STRING;
+      return h(boolean.control, {
+        forID: this.props.forID,
+        classNameWrapper: this.props.classNameWrapper,
+        type: 'checkbox',
+        value: isChecked,
+        onChange: this.handleChange,
+      });
+    },
+  })
+  );
+</script>
+</body>
+</html>

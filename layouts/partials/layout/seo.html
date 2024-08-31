@@ -1,0 +1,43 @@
+<meta name="language" content="fr">
+<meta http-equiv="content-language" content="fr" />
+
+<script type="application/ld+json">
+    {{ (dict
+    "@context" "http://schema.org"
+    "@type" "Organization"
+    "name" .Site.Data.contact.name
+    "url" .Permalink
+    "address" .Params.address
+    )}}
+</script>
+
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<meta name="apple-mobile-web-app-status-bar-style" content="#176c83">
+
+<!-- Apple meta -->
+<link rel="apple-touch-icon" href="{{ .Site.BaseURL }}/sprites/apple-touch-icon.png" />
+<link rel="apple-touch-icon" sizes="57x57" href="{{ .Site.BaseURL }}/sprites/apple-touch-icon-57x57.png" />
+<link rel="apple-touch-icon" sizes="72x72" href="{{ .Site.BaseURL }}/sprites/apple-touch-icon-72x72.png" />
+<link rel="apple-touch-icon" sizes="76x76" href="{{ .Site.BaseURL }}/sprites/apple-touch-icon-76x76.png" />
+<link rel="apple-touch-icon" sizes="114x114" href="{{ .Site.BaseURL }}/sprites/apple-touch-icon-114x114.png" />
+<link rel="apple-touch-icon" sizes="120x120" href="{{ .Site.BaseURL }}/sprites/apple-touch-icon-120x120.png" />
+<link rel="apple-touch-icon" sizes="144x144" href="{{ .Site.BaseURL }}/sprites/apple-touch-icon-144x144.png" />
+<link rel="apple-touch-icon" sizes="152x152" href="{{ .Site.BaseURL }}/sprites/apple-touch-icon-152x152.png" />
+<link rel="apple-touch-icon" sizes="180x180" href="{{ .Site.BaseURL }}/sprites/apple-touch-icon-180x180.png" />
+
+<link rel="shortcut icon" href="{{ .Site.BaseURL }}/sprites/favicon.ico">
+
+<!-- page url -->
+<link rel="canonical" href="{{ .Permalink }}" />
+<meta property="og:url" content="{{ .Permalink }}" />
+
+<!-- site url -->
+<meta name="url" content="{{ .Site.BaseURL }}">
+<meta name="identifier-URL" content="{{ .Site.BaseURL }}">
+
+<meta name="subject" content="psychology">
+<meta name="theme-color" content="#176c83">
+<meta property="og:type" content="website" />
+
+<meta property="og:site_name" content="{{ .Site.Data.contact.name }}" />
+<meta property="og:locale" content="fr" />

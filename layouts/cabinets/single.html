@@ -1,0 +1,105 @@
+{{ define "main" }}
+
+<main>
+    <div class="bg-calypso-700 text-white">
+        <header class="container pt-32 pb-16">
+            <h1 class="text-h1">{{ .Title }}</h1>
+            <p class="text-h3 mt-4 text-calypso-50">Rachel Bourgeois</p>
+        </header>
+    </div>
+
+    <div class="container grid-body gap-y-28 py-20 md:gap-y-40 md:py-32">
+        {{ partial "appointment-cta" }}
+
+        <div class="col-span-12 md:col-span-6 space-y-4 scroll-mt-32 md:scroll-mt-52" id="presentation">
+            <h2 class="text-h2 text-calypso-800">Psycholoque clinicienne</h2>
+            {{ site.Data.global.selfDescription | markdownify }}
+        </div>
+
+        <div class="col-span-12 md:col-span-6 space-y-4">
+            <h2 class="text-h2 text-calypso-800">Cabinet à {{ .Params.city }}</h2>
+            {{ .Params.officeDescription | markdownify }}
+        </div>
+
+        <div class="col-span-12 md:col-span-6">
+            <h2 class="text-h2 text-calypso-800">Diplômes, formation et expérience</h2>
+            {{ range site.Data.global.experiences }}
+                <h3 class="mt-4">{{ .title }}</h3>
+                <p class="text-label">{{ .period }}</p>
+            {{ end }}
+        </div>
+
+        <div class="col-span-12 flex flex-col items-center scroll-mt-32 md:scroll-mt-52" id="consultations">
+            <h2 class="text-h2 text-calypso-800">Consultations</h2>
+            
+           <div class="mt-8 md:columns-2 xl:columns-3 2xl:columns-4 gap-4 space-y-4 w-full h-auto">
+                {{ range (where site.Pages "Section" "consultations") }}
+                    {{ range .Pages }}
+                        <article class="break-inside-avoid-column p-4 rounded-xl bg-white space-y-4">
+                            <h3 class="text-h3 text-calypso-800">{{.Title}}</h3>
+                            {{ .Content }}
+                        </article>
+                    {{ end }}
+                {{ end }}
+           </div>
+        </div>
+
+        <div class="col-span-12 flex flex-col items-center">
+            <h2 class="text-h2 text-calypso-800">Ateliers</h2>
+            
+           <div class="mt-8 md:columns-2 xl:columns-3 2xl:columns-4 gap-4 space-y-4 w-full h-auto">
+                {{ range (where site.Pages "Section" "ateliers") }}
+                    {{ range .Pages }}
+                        <article class="break-inside-avoid-column p-4 rounded-xl bg-white space-y-4">
+                            <h3 class="text-h3 text-calypso-800">{{.Title}}</h3>
+                            {{ .Content }}
+                        </article>
+                    {{ end }}
+                {{ end }}
+           </div>
+        </div>
+
+        {{ partial "appointment-cta" }}
+
+        <div class="col-span-12 md:col-span-6 flex flex-col items-start">
+            <h2 class="text-h2 text-calypso-800">Horaires</h2>
+            {{ range .Params.opening}}
+                <h3 class="text-h3 mt-4">{{ .title }}</h3>
+                <p>{{ .content }}</p>
+            {{ end }}
+        </div>
+
+
+        <div class="col-span-12 md:col-span-6 flex flex-col items-start scroll-mt-32 md:scroll-mt-52" id="contact">
+            <h2 class="text-h2 text-calypso-800">Contact</h2>
+
+            <h3 class="text-h3 mt-4">Téléphone</h3>
+            <p>{{ site.Data.contact.phone }}</p>
+
+            <h3 class="text-h3 mt-4">Email</h3>
+            <p>{{ site.Data.contact.email }}</p>
+            
+            <h3 class="text-h3 mt-4">Adresse</h3>
+            <p>{{ .Params.address }}</p>
+        </div>
+
+        {{ partial "appointment-cta" }}
+
+
+        <div class="col-span-12 flex flex-col items-center scroll-mt-32 md:scroll-mt-52" id="tarifs">
+            <h2 class="text-h2 text-calypso-800">Tarifs</h2>
+            
+           <div class="mt-8 md:columns-2 xl:columns-3 2xl:columns-4 gap-4 space-y-4 w-full h-auto">
+                {{ range .Params.prices}}
+                    <article class="break-inside-avoid-column p-4 rounded-xl bg-white space-y-4">
+                        <h3 class="text-h3 text-calypso-800">{{.title}}</h3>
+                        <p>{{ .content }}</p>
+                        <p>{{ .price }}</p>
+                    </article>
+                {{ end }}
+           </div>
+        </div>
+    </div>
+</main>
+
+{{ end }}

@@ -1,0 +1,25 @@
+{{ define "seoRobots" }}
+    <meta name="robots" content="noindex">
+{{ end }}
+
+{{ define "main" }}
+
+<div class="container grid-body flex flex-col gap-4">
+    <h1 class="text-h1 pt-24">Mentions légales</h1>
+    
+    <h2 class="text-h3 pt-8 text-gold-normal">Propriétaire du site</h2>
+    <p class="text-body">Corentin Chevalier</p>
+    <p class="text-body">{{ .Site.Params.contact.email.content }}</p>
+
+    <h2 class="text-h3 pt-8 text-gold-normal">Entreprise</h2>
+    <p class="text-body">Coach By Co</p>
+    <p class="text-body">41 rue André Malraux</p>
+    <p class="text-body">33520 Bruges</p>
+    <p class="text-body">SIRENE 919225227</p>
+
+    <h2 class="text-h3 pt-8 text-gold-normal">Hébergement</h2>
+    <p class="text-body"><a href="https://www.netlify.com/" class="link link-visible">Société Netlify</a></p>
+    <p class="text-body">support@netlify.com</p>
+</div>
+
+{{ end }}

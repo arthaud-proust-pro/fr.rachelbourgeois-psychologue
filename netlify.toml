@@ -1,0 +1,9 @@
+[build]
+publish = "public"
+command = "npm run build"
+
+[[redirects]]
+  from = "http://rachelbourgeois-psychologue.fr/*"
+  to = "https://rachelbourgeois-psychologue.fr/:splat"
+  status = 301
+  force = true

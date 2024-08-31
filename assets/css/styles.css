@@ -1,0 +1,80 @@
+/* TailwindCSS base styles */
+/* see https://tailwindcss.com/docs/functions-and-directives#tailwind */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@tailwind variants;
+
+@layer base {
+    :focus-visible {
+        outline: solid theme('colors.black') 2px;
+        outline-offset: 3px;
+    }
+}
+
+@layer components {
+
+    .grid-body {
+        @apply grid grid-cols-12 md:gap-x-12 xl:gap-x-20;
+    }
+    
+    .p-section {
+        @apply scroll-mt-24 py-12;
+    }
+
+    .text-h1 {
+        @apply text-5xl md:text-6xl font-bold;
+    }
+
+    .text-h2 {
+        @apply text-3xl md:text-4xl font-bold;
+    }
+
+    .text-h3 {
+        @apply text-2xl font-semibold;
+    }
+
+    .text-h4 {
+        @apply text-xl md:text-2xl font-semibold;
+    }
+
+    .text-body {
+        @apply text-lg font-normal;
+    }
+
+    .text-cta {
+        @apply text-lg md:text-xl font-medium;
+    }
+
+    .text-label {
+        @apply text-base font-light;
+    }
+
+    .btn {
+        @apply text-cta text-center text-white bg-calypso-700 hover:bg-calypso-800 px-8 py-3 rounded-xl relative transition-colors duration-200;
+    }
+    .btn::after {
+        content: '';
+        @apply block absolute bottom-0 left-0 h-0 w-full transition-all delay-200 duration-200 mix-blend-difference;
+    }
+    .btn:hover::after, [aria-checked="true"].btn::after {
+        @apply h-full bottom-auto top-0;
+    }
+
+    .link {
+        @apply relative text-calypso-500;
+    }
+    .link::after {
+        content: '';
+        @apply absolute right-0 bottom-0 w-0 border-b border-current transition-all duration-300;
+    }
+    .link:hover::after,
+    a:hover .link::after {
+        @apply w-full right-auto left-0;
+    }
+
+    .link-visible::before {
+        content: '';
+        @apply absolute right-0 bottom-0 w-full border-b border-current;
+    }
+}

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="fr" class="scroll-smooth">
+<head prefix="og: http://ogp.me/ns#">
+    {{- partial "layout/head" . -}}
+
+    {{ block "pageHead" . }}
+    {{ end }}
+
+    {{ block "seoRobots" . }}
+        <meta name="robots" content="all">
+    {{ end }}
+
+    {{ partial "layout/seo" . }}
+
+    {{ block "seoHero" . }}
+    {{ end }}
+
+    {{ block "seoTitle" . }}
+        <title>{{ .Title }} - {{ .Site.Data.contact.name }}</title>
+        <meta name="twitter:title" content="{{ .Title }} - {{ .Site.Data.contact.name }}" />
+        <meta property="og:title" content="{{ .Title }} - {{ .Site.Data.contact.name }}" />
+        <meta name="apple-mobile-web-app-title" content="{{ .Title }} - {{ .Site.Data.contact.name }}" />
+    {{ end }}
+
+    {{ block "seoDescription" . }}
+        {{ $description := .Description}}
+        <meta name="description" content="{{ $description }}" />
+        <meta property="og:description" content="{{ $description }}" />
+        <meta name="twitter:description" content="{{ $description }}" />
+    {{ end}}
+
+    <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+</head>
+<body class="bg-gray-50 text-body">
+    {{- partial "layout/nav" . -}}
+    
+    <div class="min-h-screen pb-12 overflow-x-hidden">
+        {{- block "main" . }}{{- end }}
+    </div>
+
+    {{- partial "layout/footer" . -}}
+
+</body>
+</html>

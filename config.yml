@@ -1,0 +1,20 @@
+languageCode: 'fr'
+baseURL: https://rachelbourgeois-psychologue.fr
+removePathAccents: true
+
+taxonomies:
+
+menu:
+  main:
+    - name: Présentation
+      url: "#presentation"
+      weight: 1
+    - name: Consultations
+      url: "#consultations"
+      weight: 2
+    - name: Contact
+      url: "#contact"
+      weight: 3
+    - name: Tarifs
+      url: "#tarifs"
+      weight: 4

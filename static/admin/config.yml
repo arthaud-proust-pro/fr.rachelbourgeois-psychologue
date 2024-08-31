@@ -1,0 +1,176 @@
+backend:
+  name: git-gateway
+  branch: main
+local_backend:
+  allowed_hosts: ['192.168.1.14', '192.168.198.233']
+media_folder: 'static/media'
+public_folder: '/media'
+locale: fr
+slug:
+  encoding: ascii
+  clean_accents: true
+
+collections:
+  - name: config
+    label: Configuration
+    files:
+      - name: appointmentCta
+        label: Lien "Prendre rendez-vous"
+        editor: { preview: false }
+        file: "data/appointmentCta.yml"
+        fields:
+          - label: Titre
+            name: title
+          - label: Lien
+            name: href
+      - name: contact
+        label: Contact
+        editor: { preview: false }
+        file: "data/contact.yml"
+        fields:
+          - label: Téléphone
+            name: phone
+          - label: Email
+            name: email
+      - name: global
+        label: Informations globales
+        editor: { preview: false }
+        file: "data/global.yml"
+        fields:
+          - label: Description de vos services
+            name: selfDescription
+            required: true
+            widget: markdown
+            minimal: true
+            buttons: [bold, link]
+            editor_components: []
+            modes: [rich_text]
+          - label: Expériences
+            label_singular: Expérience
+            name: experiences
+            collapsed: true
+            required: false
+            widget: list
+            fields:
+              - label: Titre
+                name: title
+              - label: Période
+                name: period
+          
+  - name: cabinets
+    label: Cabinets
+    label_singular: Cabinet
+    folder: content/cabinets
+    create: true
+    editor: { preview: false }
+    fields:
+      - label: Visible
+        name: visibleInCms
+        widget: hidden
+        default: true
+      - label: Brouillon
+        name: draft
+        required: false
+        widget: boolean
+      - label: Cabinet principal
+        name: url
+        required: false
+        widget: principalCabinet
+        hint: Si activé, ce cabinet sera la page d'accueil du site. **Un seul cabinet peut être le cabinet principal**
+      - label: Titre
+        name: title
+        required: true
+      - label: Ville
+        name: city
+        required: true
+      - label: Adresse
+        name: address
+        required: true
+      - label: Description du cabinet
+        name: officeDescription
+        required: true
+        widget: markdown
+        minimal: true
+        buttons: [bold, link]
+        editor_components: []
+        modes: [rich_text]
+      - label: Horaires
+        label_singular: Horaire
+        name: opening
+        collapsed: true
+        required: false
+        widget: list
+        fields:
+          - label: Titre
+            name: title
+          - label: Contenu
+            name: content
+      - label: Tarifs
+        label_singular: Tarif
+        name: prices
+        collapsed: true
+        required: false
+        widget: list
+        fields:
+          - label: Titre
+            name: title
+          - label: Contenu
+            name: content
+            required: false
+          - label: Prix
+            name: price
+
+  - name: consultations
+    label: Consultations
+    label_singular: Consultation
+    folder: content/consultations
+    create: true
+    editor: { preview: false }
+    fields:
+      - label: Visible
+        name: visibleInCms
+        widget: hidden
+        default: true
+      - label: Brouillon
+        name: draft
+        required: false
+        widget: boolean
+      - label: Title
+        name: title
+        required: true
+      - label: Description
+        name: body
+        required: true
+        widget: markdown
+        minimal: true
+        buttons: [bold, link]
+        editor_components: []
+        modes: [rich_text]
+  
+  - name: ateliers
+    label: Ateliers
+    label_singular: Atelier
+    folder: content/ateliers
+    create: true
+    editor: { preview: false }
+    fields:
+      - label: Visible
+        name: visibleInCms
+        widget: hidden
+        default: true
+      - label: Brouillon
+        name: draft
+        required: false
+        widget: boolean
+      - label: Title
+        name: title
+        required: true
+      - label: Description
+        name: body
+        required: true
+        widget: markdown
+        minimal: true
+        buttons: [bold, link]
+        editor_components: []
+        modes: [rich_text]
+        
