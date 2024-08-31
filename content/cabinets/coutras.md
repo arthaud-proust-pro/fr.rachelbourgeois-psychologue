@@ -1,5 +1,5 @@
 ---
-url: /
+url: null
 title: Psycholoque à Coutras
 city: Coutras
 address: 11 rue René Julien
