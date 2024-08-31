@@ -12,21 +12,42 @@
         {{ partial "appointment-cta" }}
 
         <div class="col-span-12 md:col-span-6 space-y-4 scroll-mt-32 md:scroll-mt-52" id="presentation">
-            <h2 class="text-h2 text-calypso-800">Psycholoque clinicienne</h2>
+            {{ partial "image" (dict 
+                "img" "images/rachel-bourgeois.png" 
+                "opt" (dict
+                    "size" "500x"
+                    "class" "w-2/5 md:float-left md:w-1/3 mr-4 rounded-xl"
+                )
+            )}}
+            <h2 class="text-h2 text-calypso-800 md:!mt-0">Psycholoque clinicienne</h2>
             {{ site.Data.global.selfDescription | markdownify }}
         </div>
 
         <div class="col-span-12 md:col-span-6 space-y-4">
-            <h2 class="text-h2 text-calypso-800">Cabinet à {{ .Params.city }}</h2>
+            {{ with .Params.image }}
+                {{ partial "image" (dict 
+                    "img" .
+                    "opt" (dict
+                        "size" "500x"
+                        "class" "w-2/5 md:float-left md:w-1/3 mr-4 rounded-xl"
+                    )
+                )}}
+            {{ end }}
+            <h2 class="text-h2 text-calypso-800 md:!mt-0">Cabinet à {{ .Params.city }}</h2>
             {{ .Params.officeDescription | markdownify }}
         </div>
 
-        <div class="col-span-12 md:col-span-6">
+        <div class="col-span-12">
             <h2 class="text-h2 text-calypso-800">Diplômes, formation et expérience</h2>
-            {{ range site.Data.global.experiences }}
-                <h3 class="mt-4">{{ .title }}</h3>
-                <p class="text-label">{{ .period }}</p>
-            {{ end }}
+
+            <div class="md:columns-2 mt-8 space-y-4 md:gap-12 xl:gap-20">
+                {{ range site.Data.global.experiences }}
+                <div class="break-inside-avoid-column">
+                    <h3>{{ .title }}</h3>
+                    <p class="text-label">{{ .period }}</p>
+                </div>
+                {{ end }}
+            </div>
         </div>
 
         <div class="col-span-12 flex flex-col items-center scroll-mt-32 md:scroll-mt-52" id="consultations">
@@ -35,7 +56,7 @@
            <div class="mt-8 md:columns-2 xl:columns-3 2xl:columns-4 gap-4 space-y-4 w-full h-auto">
                 {{ range (where site.Pages "Section" "consultations") }}
                     {{ range .Pages }}
-                        <article class="break-inside-avoid-column p-4 rounded-xl bg-white space-y-4">
+                        <article class="card">
                             <h3 class="text-h3 text-calypso-800">{{.Title}}</h3>
                             {{ .Content }}
                         </article>
@@ -50,7 +71,7 @@
            <div class="mt-8 md:columns-2 xl:columns-3 2xl:columns-4 gap-4 space-y-4 w-full h-auto">
                 {{ range (where site.Pages "Section" "ateliers") }}
                     {{ range .Pages }}
-                        <article class="break-inside-avoid-column p-4 rounded-xl bg-white space-y-4">
+                        <article class="card">
                             <h3 class="text-h3 text-calypso-800">{{.Title}}</h3>
                             {{ .Content }}
                         </article>
@@ -61,7 +82,8 @@
 
         {{ partial "appointment-cta" }}
 
-        <div class="col-span-12 md:col-span-6 flex flex-col items-start">
+        <div class="col-span-12 md:col-span-6 flex flex-col items-start relative overflow-visible">
+            {{/*  <img src="/blobs/blob-hours.svg" class="-z-10 -left-14 -top-14 absolute h-full opacity-40"/>  */}}
             <h2 class="text-h2 text-calypso-800">Horaires</h2>
             {{ range .Params.opening}}
                 <h3 class="text-h3 mt-4">{{ .title }}</h3>
@@ -91,7 +113,7 @@
             
            <div class="mt-8 md:columns-2 xl:columns-3 2xl:columns-4 gap-4 space-y-4 w-full h-auto">
                 {{ range .Params.prices}}
-                    <article class="break-inside-avoid-column p-4 rounded-xl bg-white space-y-4">
+                    <article class="card">
                         <h3 class="text-h3 text-calypso-800">{{.title}}</h3>
                         <p>{{ .content }}</p>
                         <p>{{ .price }}</p>

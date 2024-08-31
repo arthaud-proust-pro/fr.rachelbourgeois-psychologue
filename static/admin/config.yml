@@ -3,8 +3,8 @@ backend:
   branch: main
 local_backend:
   allowed_hosts: ['192.168.1.14', '192.168.198.233']
-media_folder: 'static/media'
-public_folder: '/media'
+media_folder: '/assets/images'
+public_folder: '/images'
 locale: fr
 slug:
   encoding: ascii
@@ -94,6 +94,9 @@ collections:
         buttons: [bold, link]
         editor_components: []
         modes: [rich_text]
+      - label: Image du cabinet
+        name: image
+        widget: image
       - label: Horaires
         label_singular: Horaire
         name: opening

@@ -11,19 +11,20 @@ officeDescription: |-
   À proximité de la ligne G et pas très loin des lignes 2, 35 et 41.
 
   Il y a également des stationnements gratuits pour les voitures.
+image: /images/bordeaux-1.jpg
 opening:
   - title: Consultations
     content: Mercredi au vendredi
-  - title: Psy et Plume un mercredi par mois
-    content: 10h à 12h
-  - title: Relaxation et méditation un jeudi sur deux
-    content: 20h à 21h
+  - title: Psy et Plume
+    content: Un mercredi par mois, 10h à 12h
+  - title: Relaxation et méditation
+    content: Un jeudi sur deux, 20h à 21h
   - title: Art-thérapie
     content: Sur rendez-vous
   - title: Hypnose
     content: Sur rendez-vous
 prices:
-  - title: "Consultation enfant, adolescent & adulte"
+  - title: Consultation enfant, adolescent & adulte
     content: null
     price: 65€ par consultation
   - title: Thérapie de couple

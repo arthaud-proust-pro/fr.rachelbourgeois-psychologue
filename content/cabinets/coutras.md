@@ -11,10 +11,10 @@ officeDescription: >
 opening:
   - title: Consultations
     content: Le lundi
-  - title: Psy et Plume un mercredi par mois
-    content: 10h à 12h
-  - title: Relaxation et méditation un jeudi sur deux
-    content: 20h à 21h
+  - title: Psy et Plume 
+    content: Un mercredi par mois, 10h à 12h
+  - title: Relaxation et méditation
+    content: Un jeudi sur deux, 20h à 21h
   - title: Art-thérapie
     content: Sur rendez-vous
   - title: Hypnose

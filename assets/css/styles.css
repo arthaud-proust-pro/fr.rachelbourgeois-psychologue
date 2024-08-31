@@ -23,15 +23,15 @@
     }
 
     .text-h1 {
-        @apply text-5xl md:text-6xl font-bold;
+        @apply text-5xl md:text-6xl font-semibold;
     }
 
     .text-h2 {
-        @apply text-3xl md:text-4xl font-bold;
+        @apply text-3xl md:text-4xl font-semibold;
     }
 
     .text-h3 {
-        @apply text-2xl font-semibold;
+        @apply text-2xl font-normal;
     }
 
     .text-h4 {
@@ -51,14 +51,11 @@
     }
 
     .btn {
-        @apply text-cta text-center text-white bg-calypso-700 hover:bg-calypso-800 px-8 py-3 rounded-xl relative transition-colors duration-200;
+        @apply text-nowrap text-cta text-center text-white bg-calypso-700 hover:bg-calypso-800 px-8 py-3 rounded-xl transition-colors duration-200;
     }
-    .btn::after {
-        content: '';
-        @apply block absolute bottom-0 left-0 h-0 w-full transition-all delay-200 duration-200 mix-blend-difference;
-    }
-    .btn:hover::after, [aria-checked="true"].btn::after {
-        @apply h-full bottom-auto top-0;
+
+    .btn-secondary {
+        @apply text-nowrap text-cta text-center text-calypso-800 hover:bg-calypso-100/50 px-8 py-3  rounded-xl transition-colors duration-200;
     }
 
     .link {
@@ -76,5 +73,9 @@
     .link-visible::before {
         content: '';
         @apply absolute right-0 bottom-0 w-full border-b border-current;
+    }
+
+    .card {
+        @apply break-inside-avoid-column p-5 md:p-6 rounded-3xl bg-white space-y-4;
     }
 }

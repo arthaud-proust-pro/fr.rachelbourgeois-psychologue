@@ -1,5 +1,7 @@
-<p class="col-span-12 flex max-md:flex-col rounded-3xl bg-white items-center justify-evenly gap-4 md:gap-8 text-black text-cta p-4 md:p-8">
-    <span>Prendre rendez vous</span>
-    <a href="{{ site.Data.appointmentCta.href }}" target="_blank" rel="noopener noreferrer" class="btn">Directement sur {{ site.Data.appointmentCta.title }}</a>
-    <a href="#contact" class="link">Ou en me contactant</a>
+<p class="col-span-12 flex flex-wrap max-md:flex-col rounded-3xl bg-white items-center justify-evenly gap-4 md:gap-8 text-black text-cta p-4 pt-6 md:p-8">
+    <span class="text-h3">Prendre rendez vous</span>
+    <span class="flex flex-wrap items-center gap-2">
+        <a href="{{ site.Data.appointmentCta.href }}" target="_blank" rel="noopener noreferrer" class="btn flex-1">Directement sur {{ site.Data.appointmentCta.title }}</a>
+        <a href="#contact" class="btn-secondary flex-1">Ou en me contactant</a>
+    </span>
 </p>
