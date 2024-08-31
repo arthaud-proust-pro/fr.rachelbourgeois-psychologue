@@ -23,7 +23,7 @@ opening:
   - title: Hypnose
     content: Sur rendez-vous
 prices:
-  - title: "Consultation : Enfant, adolescent & adulte"
+  - title: "Consultation enfant, adolescent & adulte"
     content: null
     price: 65€ par consultation
   - title: Thérapie de couple
