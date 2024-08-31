@@ -1,6 +1,6 @@
 ---
 url: /
-title: Psycholoque à Bordeaux Caudéran
+title: Psychologue à Bordeaux Caudéran
 city: Bordeaux Caudéran
 address: 489 Avenue du Maréchal de Lattre de Tassigny
 officeDescription: |-

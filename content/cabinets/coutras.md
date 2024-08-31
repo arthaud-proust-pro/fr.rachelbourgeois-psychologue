@@ -1,6 +1,6 @@
 ---
 url: null
-title: Psycholoque à Coutras
+title: Psychologue à Coutras
 city: Coutras
 address: 11 rue René Julien
 officeDescription: >
