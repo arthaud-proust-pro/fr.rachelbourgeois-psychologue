@@ -1,7 +1,28 @@
-<footer class="bg-calypso-700 text-label mt-32">
-    <nav class="container flex flex-col items-start md:items-center py-16 gap-4">
-        {{/*  <a class="link text-white" href="/mentions-legales">Mentions légales</a>  */}}
-        <a class="link text-white" href="/admin">Accès administrateur</a>
-        <a class="link text-white" href="https://arthaudproust.fr" target="_blank">Réalisé par Arthaud Proust</a>
+<footer class="bg-calypso-700 text-white mt-32 py-24">
+    <nav class="container grid-body">
+        <div class="col-span-12 md:col-span-6">
+            <p class="text-h2 ">Rachel Bourgeois</p>
+            <p class="mt-4">Psychologue à Bordeaux depuis plus de 10 ans</p>
+        </div>
+        
+        <div class="col-span-12 md:col-span-3">
+            <p class="text-h3">Cabinets</p>
+            <ul class="space-y-2 mt-4">
+                {{ range where site.Pages "Section" "cabinets" }}
+                    {{ range .Pages}}
+                    <li><a class="link text-white" href="{{ .Permalink }}">{{ .Params.city }}</a></li>
+                    {{ end }}
+                {{ end }}
+            </ul>
+        </div>
+
+        <div class="col-span-12 md:col-span-3">
+            <p class="text-h3">Liens</p>
+            <ul class="space-y-2 mt-4">
+                <li><a class="link text-white" href="/admin">Accès administrateur</a></li>
+                <li><a class="link text-white" href="/mentions-legales">Mentions légales</a></li>
+                {{/*  <li><a class="link text-white" href="https://arthaudproust.fr" target="_blank">Par Arthaud Proust</a></li>  */}}
+            </ul>
+        </div>
     </nav>
 </footer>

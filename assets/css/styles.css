@@ -78,4 +78,8 @@
     .card {
         @apply break-inside-avoid-column p-5 md:p-6 rounded-3xl bg-white space-y-4;
     }
+
+    .badge {
+        @apply -ml-0.5 px-3.5 py-1.5  rounded-xl bg-white;
+    }
 }

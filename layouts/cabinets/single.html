@@ -86,8 +86,8 @@
             {{/*  <img src="/blobs/blob-hours.svg" class="-z-10 -left-14 -top-14 absolute h-full opacity-40"/>  */}}
             <h2 class="text-h2 text-calypso-800">Horaires</h2>
             {{ range .Params.opening}}
-                <h3 class="text-h3 mt-4">{{ .title }}</h3>
-                <p>{{ .content }}</p>
+                <h3 class="text-h3 mt-4 text-calypso-800">{{ .title }}</h3>
+                <p class="mt-2">{{ .content }}</p>
             {{ end }}
         </div>
 
@@ -95,14 +95,14 @@
         <div class="col-span-12 md:col-span-6 flex flex-col items-start scroll-mt-32 md:scroll-mt-52" id="contact">
             <h2 class="text-h2 text-calypso-800">Contact</h2>
 
-            <h3 class="text-h3 mt-4">Téléphone</h3>
-            <p>{{ site.Data.contact.phone }}</p>
+            <h3 class="text-h3 mt-4 text-calypso-800">Téléphone</h3>
+            <p class="mt-2">{{ site.Data.contact.phone }}</p>
 
-            <h3 class="text-h3 mt-4">Email</h3>
-            <p>{{ site.Data.contact.email }}</p>
+            <h3 class="text-h3 mt-4 text-calypso-800">Email</h3>
+            <p class="mt-2">{{ site.Data.contact.email }}</p>
             
-            <h3 class="text-h3 mt-4">Adresse</h3>
-            <p>{{ .Params.address }}</p>
+            <h3 class="text-h3 mt-4 text-calypso-800">Adresse</h3>
+            <p class="mt-2">{{ .Params.address }}</p>
         </div>
 
         {{ partial "appointment-cta" }}
