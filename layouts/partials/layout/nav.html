@@ -31,8 +31,9 @@
 
     {{ with .Site.Menus.main }}
         <div 
-            class="w-full flex-grow h-screen flex-col items-center justify-center gap-8 text-h3 overflow-x-hidden"
-            :class="isOpen?'flex':'hidden'"
+            class="w-full flex-grow h-screen flex flex-col items-center justify-center gap-8 text-h3 overflow-x-hidden"
+            x-cloak
+            x-show="isOpen"
         >
             {{ range .ByWeight  }}
             <a href="{{ .URL  }}" class="link text-white" @click="closeMenu">{{ .Name }}</a>
