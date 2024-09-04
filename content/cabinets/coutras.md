@@ -1,6 +1,7 @@
 ---
 url: null
 title: Psychologue à Coutras
+description: Psychologue clinicienne à Coutras, je propose des consultations pour tout âge et couples, ainsi que des bilans psychologique ou d'orientation scolaire.
 city: Coutras
 address: 11 rue René Julien
 officeDescription: >

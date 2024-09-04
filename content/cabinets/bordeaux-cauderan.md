@@ -1,6 +1,9 @@
 ---
 url: /
 title: Psychologue à Bordeaux Caudéran
+description: Psychologue clinicienne à Bordeaux, je propose des consultations
+  pour tout âge et couples, ainsi que des bilans psychologique ou d'orientation
+  scolaire.
 city: Bordeaux Caudéran
 address: 489 Avenue du Maréchal de Lattre de Tassigny
 officeDescription: |-

@@ -80,6 +80,12 @@ collections:
       - label: Titre
         name: title
         required: true
+      - label: Description
+        name: description
+        widget: text
+        hint: Apparaît dans les résultats de recherche
+        pattern: ['^.{40,160}$', "entre 50 et 160 caractères"]
+        required: true
       - label: Ville
         name: city
         required: true
