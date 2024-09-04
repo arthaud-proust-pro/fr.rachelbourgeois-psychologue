@@ -3,6 +3,8 @@
     {{- $pages := where .Site.Pages "Section" "!=" "consultations" -}}
     {{- $pages = where $pages "Section" "!=" "ateliers" -}}
     {{- range $pages -}}
-    {{- partial "layout/sitemap-url" . -}}
+        {{- if not (and (eq .Section "cabinets") (eq .Params.url "/")) -}}
+        {{- partial "layout/sitemap-url" . -}}
+        {{- end -}}
     {{- end -}}
 </urlset>
