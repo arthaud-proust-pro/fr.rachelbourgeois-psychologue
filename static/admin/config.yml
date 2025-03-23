@@ -79,6 +79,7 @@ collections:
         hint: Si activé, ce cabinet sera la page d'accueil du site. **Un seul cabinet peut être le cabinet principal**
       - label: Titre
         name: title
+        hint: "Affiché en grand et dans les onglets. Ex: \"Psychologue à Bordeaux Caudéran\""
         required: true
       - label: Description
         name: description
