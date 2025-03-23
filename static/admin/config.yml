@@ -63,6 +63,7 @@ collections:
     folder: content/cabinets
     create: true
     editor: { preview: false }
+    summary: "{{ url | ternary('(Cabinet principal)', '')}} {{title }}"
     fields:
       - label: Visible
         name: visibleInCms
