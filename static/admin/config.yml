@@ -103,6 +103,7 @@ collections:
       - label: Image du cabinet
         name: image
         widget: image
+        required: false
       - label: Horaires
         label_singular: Horaire
         name: opening
