@@ -1,5 +1,5 @@
 ---
-url: null
+url: /
 title: Psychologue à St Médard de Guizières
 description: Psychologue clinicienne au Pôle de Santé de St Médard de Guizières,
   je reçois en consultation enfants, adolescents, adultes et couples.
@@ -16,7 +16,7 @@ officeDescription: >-
   Il y a un parking et un accès pour les personnes à mobilité réduite.
 opening:
   - title: Consultations
-    content: Le mardi et le mercredi
+    content: Le mardi, mercredi et jeudi
   - title: Psy et Plume
     content: A venir
   - title: Relaxation et méditation
@@ -34,10 +34,10 @@ prices:
     price: 70€ la consultation
   - title: Séance d'hypnose
     content: null
-    price: 65€ la séance
+    price: 70€ la séance
   - title: Bilan psychologique
     content: 2 à 3 consultations de 2h
-    price: 250€ le bilan
+    price: 300€ le bilan
   - title: Bilan d'orientation scolaire
     content: 2 à 3 consultations de 2h
     price: 250€ le bilan
@@ -48,6 +48,6 @@ prices:
     content: Durée 1h
     price: A venir
   - title: Séance d'Art-thérapie
-    content: Groupe ou individuel, durée 1h
-    price: A venir
+    content: Individuel, durée 1h
+    price: 70€
 ---
