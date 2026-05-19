@@ -2,6 +2,9 @@
 publish = "public"
 command = "npm run build"
 
+[build.environment]
+  HUGO_VERSION = "0.111.3"
+
 [[redirects]]
   from = "http://rachelbourgeois-psychologue.fr/*"
   to = "https://rachelbourgeois-psychologue.fr/:splat"
