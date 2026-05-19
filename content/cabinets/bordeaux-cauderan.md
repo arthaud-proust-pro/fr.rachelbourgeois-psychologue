@@ -1,19 +1,22 @@
 ---
-url: /
+url: null
 title: Psychologue à Bordeaux Caudéran
 description: Psychologue clinicienne à Bordeaux, je propose des consultations
   pour tout âge et couples, ainsi que des bilans psychologique ou d'orientation
   scolaire.
 city: Bordeaux Caudéran
 address: 489 Avenue du Maréchal de Lattre de Tassigny
-officeDescription: |-
-  Le cabinet est situé au premier étage sans ascenseur
-  (consultations à domicile possibles), au 489 Avenue du Maréchal de Lattre de
-  Tassigny, à Bordeaux Caudéran (33200).
+officeDescription: >-
+  Le cabinet est situé au premier étage sans ascenseur.
+
 
   À proximité de la ligne G et pas très loin des lignes 2, 35 et 41.
 
+
   Il y a également des stationnements gratuits pour les voitures.
+
+
+  Attention:  Je ne prends actuellement pas de nouveaux patients dans ce cabinet.
 image: /images/bordeaux-1.jpg
 opening:
   - title: Consultations
