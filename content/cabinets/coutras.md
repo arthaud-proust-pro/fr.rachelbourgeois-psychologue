@@ -1,12 +1,12 @@
 ---
 url: /
-title: Psychologue à St Médard de Guizières
+title: Psychologue au Pôle de Santé de St Médard de Guizières
 description: Psychologue clinicienne au Pôle de Santé de St Médard de Guizières,
   je reçois en consultation enfants, adolescents, adultes et couples.
 city: St Médard de Guizières
 address: 3 Avenue de l'Europe
 officeDescription: >-
-  Le cabinet est situé au Pôle de santé, 3 Avenue de l'Europe, à ST MEDARD DE
+  Le cabinet est situé au Pôle de santé, derrière la Mairie, à ST MEDARD DE
   GUIZIERES (33230).
 
 
