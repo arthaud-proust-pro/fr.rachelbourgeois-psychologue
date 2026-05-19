@@ -20,11 +20,7 @@ officeDescription: >-
 image: /images/bordeaux-1.jpg
 opening:
   - title: Consultations
-    content: Mercredi au vendredi
-  - title: Psy et Plume
-    content: Un mercredi par mois, 10h à 12h
-  - title: Relaxation et méditation
-    content: Un jeudi sur deux, 20h à 21h
+    content: Vendredi
   - title: Art-thérapie
     content: Sur rendez-vous
   - title: Hypnose
@@ -32,26 +28,20 @@ opening:
 prices:
   - title: Consultation enfant, adolescent & adulte
     content: null
-    price: 65€ par consultation
+    price: 70€ la consultation
   - title: Thérapie de couple
     content: null
-    price: 90€ par consultation
+    price: 90€ la consultation
   - title: Séance d'hypnose
     content: null
-    price: 65€ par séance
+    price: 70€ la séance
   - title: Bilan psychologique
     content: 2 à 3 consultations de 2h
-    price: 450€ par bilan
+    price: 450€ le bilan
   - title: Bilan d'orientation scolaire
     content: 2 à 3 consultations de 2h
-    price: 350€ par bilan
-  - title: Psy et Plume
-    content: Atelier d'Écriture Autobiographique en groupe, durée 2H
-    price: 45€ par séance
-  - title: Relaxation et méditation en groupe
-    content: Durée 1h
-    price: 45€ par séance
+    price: 350€ le bilan
   - title: Séance d'Art-thérapie
     content: Groupe ou individuel, durée 1h
-    price: 65€ par séance
+    price: 70€ la séance
 ---
